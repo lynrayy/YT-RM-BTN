@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name      Youtube "Remove From Playlist" Button
 // @namespace http://tampermonkey.net/
-// @version   1.600
+// @version   1.6
 // @description Adds a button next to the three dots menu to remove videos from a playlist with one click on YouTube
 // @author    Lynrayy + art13
 // @match     https://www.youtube.com/*
