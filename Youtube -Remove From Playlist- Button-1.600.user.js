@@ -8,6 +8,7 @@
 // @grant     none
 // @license   MIT
 // @source   https://github.com/lynrayy/YT-RM-BTN
+// @require placebo.easy
 // ==/UserScript==
 
 (function() {
