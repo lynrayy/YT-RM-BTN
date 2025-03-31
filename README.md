@@ -1,6 +1,9 @@
-# YT-RM-BTN
-Youtube "Remove From Playlist" Button (Script)
+# Youtube "Remove From Playlist" Button (Script)
 
-Adds a button next to the three dots menu to remove videos from a playlist with one click on YouTube
+## [▶️CLICK HERE TO INSTALL SCRIPT](https://github.com/lynrayy/YT-RM-BTN/raw/refs/heads/main/Youtube%20-Remove%20From%20Playlist-%20Button-1.600.user.js)  
+## [▶️НАЖМИТЕ ЧТО БЫ УСТАНОВИТЬ](https://github.com/lynrayy/YT-RM-BTN/raw/refs/heads/main/Youtube%20-Remove%20From%20Playlist-%20Button-1.600.user.js)  
 
-INSTALL SCRIPT
+`[EN]` Adds a button next to the three dots menu to remove videos from a playlist with one click on YouTube  
+`[RU]` Добавляет кнопку "удалить" рядом с тремя точками, что бы можно было удалить одним нажатием видос из плейлиста  
+
+![image](https://github.com/user-attachments/assets/d7e197e1-52a0-4d35-83ef-a7ec557ae4b4)
