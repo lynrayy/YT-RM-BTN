@@ -7,7 +7,7 @@
 // @match     https://www.youtube.com/*
 // @grant     none
 // @license   MIT
-// @source
+// @source   https://github.com/lynrayy/YT-RM-BTN
 // ==/UserScript==
 
 (function() {
