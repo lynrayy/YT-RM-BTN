@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name      Youtube "Remove From Playlist" Button
 // @namespace http://tampermonkey.net/
-// @version   1.7
+// @version   1.8
 // @description Adds a button next to the three dots menu to remove videos from a playlist with one click on YouTube
 // @author    Lynrayy + art13
 // @match     https://www.youtube.com/*
 // @grant     none
 // @license   MIT
-// @source
+// @source    https://github.com/lynrayy/YT-RM-BTN
 // ==/UserScript==
 
 (function() {
@@ -47,8 +47,11 @@
             await new Promise(resolve => setTimeout(resolve, 100));
 
             const removeButton = document.querySelector('ytd-menu-service-item-renderer:nth-child(3) tp-yt-paper-item');
-            if (removeButton) {
+            const removeButton2 = document.querySelector('ytd-menu-service-item-renderer:nth-child(2) tp-yt-paper-item');
+            if (removeButton) { // Для плейлистов на всю страницу (Только для "Смотреть позже")
                 removeButton.click();
+            } else if (removeButton2) { // Для мини плейлистов на странице видео
+                removeButton2.click();
             } else {
                 alert('It was not possible to delete the video. Please try again.');
             }
@@ -62,8 +65,13 @@
 
     function addRemoveButtons() {
         console.log('Adding remove buttons to all videos');
+        // Для плейлистов на всю страницу
         const videoContainers = document.querySelectorAll('ytd-playlist-video-renderer');
         videoContainers.forEach(addRemoveButton);
+
+        // Для компактных плейлистов на странице видео
+        const videoContainers2 = document.querySelectorAll('ytd-playlist-panel-video-renderer');
+        videoContainers2.forEach(addRemoveButton);
     }
 
     function init() {
